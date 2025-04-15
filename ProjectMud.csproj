@@ -6,6 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Components\App.razor~RF8fd171.TMP" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="MudBlazor" Version="8.*" />

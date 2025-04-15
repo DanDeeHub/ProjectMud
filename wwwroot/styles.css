@@ -1,0 +1,12 @@
+﻿
+.bg-trans {
+    background-color: transparent
+}
+
+.hover-primary:hover {
+    color: var(--mud-palette-primary);
+}
+
+.hover-secondary:hover {
+    color: var(--mud-palette-secondary);
+}

@@ -6,10 +6,21 @@
 <MudSnackbarProvider />
 <MudLayout>
     <MudAppBar Elevation="1">
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        <MudIconButton Href="/" Icon="@Icons.Custom.Brands.MudBlazor" />
-        <MudSpacer />
-        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
+       <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+       <MudIconButton Class='hover-primary' Href="/" Icon="@Icons.Custom.Brands.MudBlazor" />
+       <MudSpacer />
+       <div>
+            <MudTooltip Class="ml-4" Text="Search" Arrow="true" Placement="Placement.Bottom">
+                <MudIconButton Class='ml-4 hover-primary' Icon="@Icons.Material.Filled.Search" Edge="Edge.End" />
+            </MudTooltip>
+            <MudTooltip Class="ml-4" Text="Cart" Arrow="true" Placement="Placement.Bottom">
+                <MudIconButton Class='ml-4 hover-primary' Icon="@Icons.Material.Filled.ShoppingCart" Edge="Edge.End" />
+            </MudTooltip>
+            <MudTooltip Class="ml-4" Text="Account" Arrow="true" Placement="Placement.Bottom">
+                <MudIconButton Class='ml-4 hover-primary' Icon="@Icons.Material.Filled.AccountCircle" Edge="Edge.End" />
+            </MudTooltip>
+        </div>
+
     </MudAppBar>
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu/>
