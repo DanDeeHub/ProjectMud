@@ -2,26 +2,26 @@
 
 <PageTitle>Home</PageTitle>
 
-<MudPaper Height="600px" Width="100%">
-   <MudContainer Fixed="true" Class="d-flex justify-center align-center" Style="height:100%;">
-       <MudCarousel Class="mud-width-full" Style="height:80%;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
-           <MudCarouselItem Transition="transition" Color="@Color.Primary">
-               <div class="d-flex" style="height:100%">
-                   <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
-               </div>
-           </MudCarouselItem>
-           <MudCarouselItem Transition="transition" Color="@Color.Secondary">
-               <div class="d-flex" style="height:100%">
-                   <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
-               </div>
-           </MudCarouselItem>
-           <MudCarouselItem Transition="transition">
-               <div class="d-flex" style="height:100%">
-                   <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Primary" Size="@Size.Large" />
-               </div>
-           </MudCarouselItem>
-       </MudCarousel>
-   </MudContainer>
+<MudPaper Class=" transparent-bg no-shadow" Height="600px" Width="100%" Square="true">
+    <MudContainer Fixed="true" Class="d-flex justify-center align-center" Style="height:100%;">
+      <MudCarousel Class="mud-width-full" Style="height:80%;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+          <MudCarouselItem Class="carousel-dark-bg" Transition="transition" Color="@Color.Primary">
+              <div class="d-flex" style="height:100%">
+                  <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+              </div>
+          </MudCarouselItem>
+          <MudCarouselItem Class="carousel-dark-bg" Transition="transition" Color="@Color.Primary">
+              <div class="d-flex" style="height:100%">
+                  <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+              </div>
+          </MudCarouselItem>
+          <MudCarouselItem Class="carousel-dark-bg" Transition="transition" Color="Color.Primary">
+              <div class="d-flex" style="height:100%">
+                  <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+              </div>
+          </MudCarouselItem>
+      </MudCarousel>
+  </MudContainer>
 </MudPaper>
 
 @* Transition Select *@

@@ -5,24 +5,23 @@
 <MudDialogProvider />
 <MudSnackbarProvider />
 <MudLayout>
-    <MudAppBar Elevation="1">
-       <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-       <MudIconButton Class='hover-primary' Href="/" Icon="@Icons.Custom.Brands.MudBlazor" />
+    <MudAppBar Class="shadow-light" Elevation="1">
+        <MudIconButton Class="hover-primary icon-button-light" Icon="@Icons.Material.Filled.Menu" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudIconButton Class='hover-primary icon-button-light' Href="/" Icon="@Icons.Custom.Brands.MudBlazor" />
        <MudSpacer />
        <div>
             <MudTooltip Class="ml-4" Text="Search" Arrow="true" Placement="Placement.Bottom">
-                <MudIconButton Class='ml-4 hover-primary' Icon="@Icons.Material.Filled.Search" Edge="Edge.End" />
+                <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.Search" Edge="Edge.End" />
             </MudTooltip>
             <MudTooltip Class="ml-4" Text="Cart" Arrow="true" Placement="Placement.Bottom">
-                <MudIconButton Class='ml-4 hover-primary' Icon="@Icons.Material.Filled.ShoppingCart" Edge="Edge.End" />
+                <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.ShoppingCart" Edge="Edge.End" />
             </MudTooltip>
             <MudTooltip Class="ml-4" Text="Account" Arrow="true" Placement="Placement.Bottom">
-                <MudIconButton Class='ml-4 hover-primary' Icon="@Icons.Material.Filled.AccountCircle" Edge="Edge.End" />
+                <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.AccountCircle" Edge="Edge.End" />
             </MudTooltip>
         </div>
-
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+    <MudDrawer Class="shadow-light" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu/>
     </MudDrawer>
     <MudMainContent>
@@ -78,19 +77,19 @@
     {
         Primary = "#7e6fff",
         Surface = "#1e1e2d",
-        Background = "#1a1a27",
+        Background = "#f0f0f0", //changed
         BackgroundGray = "#151521",
         AppbarText = "#92929f",
-        AppbarBackground = "rgba(26,26,39,0.8)",
-        DrawerBackground = "#1a1a27",
+        AppbarBackground = "#060302", //changed
+        DrawerBackground = "#060302", //changed
         ActionDefault = "#74718e",
         ActionDisabled = "#9999994d",
         ActionDisabledBackground = "#605f6d4d",
-        TextPrimary = "#b2b0bf",
+        TextPrimary = "#060302",
         TextSecondary = "#92929f",
         TextDisabled = "#ffffff33",
         DrawerIcon = "#92929f",
-        DrawerText = "#92929f",
+        DrawerText = "#f0f0f0", //changed
         GrayLight = "#2a2833",
         GrayLighter = "#1e1e2d",
         Info = "#4a86ff",

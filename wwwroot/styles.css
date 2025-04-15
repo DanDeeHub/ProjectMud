@@ -1,12 +1,23 @@
-﻿
-.bg-trans {
-    background-color: transparent
+﻿.hover-primary:hover {
+    color: #b0b1b0 !important;
 }
 
-.hover-primary:hover {
-    color: var(--mud-palette-primary);
+.icon-button-light {
+    color: #f0f0f0 !important;
 }
 
-.hover-secondary:hover {
-    color: var(--mud-palette-secondary);
+.transparent-bg {
+    background-color: transparent !important;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.shadow-light {
+    box-shadow: 0 1px 0 0 #f0f0f0 !important;
+}
+
+.carousel-dark-bg {
+    background-color: #060302 !important;
 }
