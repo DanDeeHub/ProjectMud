@@ -8,18 +8,16 @@
     <MudAppBar Class="shadow-light" Elevation="1">
         <MudIconButton Class="hover-primary icon-button-light" Icon="@Icons.Material.Filled.Menu" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudIconButton Class='hover-primary icon-button-light' Href="/" Icon="@Icons.Custom.Brands.MudBlazor" />
-       <MudSpacer />
-       <div>
-            <MudTooltip Class="ml-4" Text="Search" Arrow="true" Placement="Placement.Bottom">
-                <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.Search" Edge="Edge.End" />
-            </MudTooltip>
-            <MudTooltip Class="ml-4" Text="Cart" Arrow="true" Placement="Placement.Bottom">
-                <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.ShoppingCart" Edge="Edge.End" />
-            </MudTooltip>
-            <MudTooltip Class="ml-4" Text="Account" Arrow="true" Placement="Placement.Bottom">
-                <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.AccountCircle" Edge="Edge.End" />
-            </MudTooltip>
-        </div>
+        <MudSpacer />
+        <MudTooltip Class="ml-4" Text="Search" Arrow="true" Placement="Placement.Bottom">
+            <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.Search" Edge="Edge.End" />
+        </MudTooltip>
+        <MudTooltip Class="ml-4" Text="Cart" Arrow="true" Placement="Placement.Bottom">
+            <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.ShoppingCart" Edge="Edge.End" />
+        </MudTooltip>
+        <MudTooltip Class="ml-4" Text="Account" Arrow="true" Placement="Placement.Bottom">
+            <MudIconButton Class='ml-4 hover-primary icon-button-light' Icon="@Icons.Material.Outlined.AccountCircle" Edge="Edge.End" />
+        </MudTooltip>
     </MudAppBar>
     <MudDrawer Class="shadow-light" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu/>
